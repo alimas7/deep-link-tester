@@ -1,6 +1,6 @@
 ext {
     // Android gradle plugin.
-    androidPluginVer = "2.3.0-beta3"
+    androidPluginVer = "2.3.3"
     // Android Build Tools.
     buildToolsVer = "25.0.0"
     // Android SDK.
