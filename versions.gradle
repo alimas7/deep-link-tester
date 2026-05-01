@@ -8,7 +8,7 @@ ext {
     targetSdkVer = 25
     compileSdkVer = 25
     // Dependencies.
-    retrolambdaVer = "3.5.0"
+    // retrolambdaVer = "3.5.0"
     androidAptVer = "1.8"
     dbflowVer = "4.0.0-beta5"
     supportLibraryVer = "25.1.0"

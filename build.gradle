@@ -6,7 +6,8 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:${androidPluginVer}"
-        classpath "me.tatarka:gradle-retrolambda:${retrolambdaVer}"
+        // Remove retrolambda; Android Gradle Plugin 3.0+ has built‑in Java 8 support
+        // classpath "me.tatarka:gradle-retrolambda:${retrolambdaVer}
     }
 }
 
