@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
-apply plugin: 'com.neenbedankt.android-apt'
 
 apply from: '../versions.gradle'
 
@@ -43,15 +42,15 @@ dependencies {
     compile "com.android.support:appcompat-v7:${supportLibraryVer}"
     compile "com.android.support:recyclerview-v7:${supportLibraryVer}"
     compile "com.google.dagger:dagger:${daggerVer}"
-    apt "com.google.dagger:dagger-compiler:${daggerVer}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${daggerVer}"
     compile "javax.annotation:jsr250-api:${javaxAnnotationVer}"
     compile "com.jakewharton:butterknife:${butterknifeVer}"
-    apt "com.jakewharton:butterknife-compiler:${butterknifeVer}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterknifeVer}"
     compile "io.reactivex.rxjava2:rxjava:${rxJavaVer}"
     compile "io.reactivex.rxjava2:rxandroid:${rxAndroidVer}"
     compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVer}"
     compile "com.github.Raizlabs.DBFlow:dbflow:${dbflowVer}"
-    apt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVer}"
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVer}"
     androidTestCompile("com.android.support.test.espresso:espresso-core:${espressoVer}", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
