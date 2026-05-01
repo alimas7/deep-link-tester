@@ -1,7 +1,8 @@
 buildscript {
     apply from: 'versions.gradle'
     repositories {
-        jcenter()
+        google()
+        // jcenter()
         mavenCentral()
     }
     dependencies {
